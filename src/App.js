@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import FeedbackData from './Data/FeedbackData'
 import { useState } from 'react'
 import AboutPages from './Pages/AboutPages'
-
+import AboutIconLink from './Components/AboutIconLink'
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData)
   const deleteFeedback = (id) => {
@@ -43,6 +43,7 @@ function App() {
         ></Route>
         <Route path='/about' element={<AboutPages />} />
       </Routes>
+      <AboutIconLink />
     </Router>
   )
 }
