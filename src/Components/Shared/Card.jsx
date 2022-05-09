@@ -1,4 +1,3 @@
-import { FaTimes } from 'react-icons/fa'
 import React from 'react'
 
 function Card({ children, reverse }) {
